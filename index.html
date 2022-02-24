@@ -1,0 +1,158 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>WISE RV GLASS</title>
+<link href="css/glass.css" rel="stylesheet" type="text/css">
+<script src="../js/jquery-1.8.3.js"></script>
+<script src="../js/jquery-ui-1.9.2.custom.js"></script>
+<script src="js/loadApp.js"></script>
+<script src="js/navigation.js"></script>
+<script src="js/functions.js"></script>
+<script src="js/dictionary.js"></script>
+
+</head>
+
+<body>
+
+<div id="header">
+	<div id="headerText">WISE RV GLASS</div>
+	<img id="headerBackBtn" src="images/btnBack.svg" onClick="navigateBackward()" class="headerIcons">
+	<img id="headerHomeBtn" src="images/icon_home.svg" onClick="directHome()" class="headerIcons">
+</div>
+
+<div id="page-0" class="pageBody">
+		<div class="spacer10px"></div>
+		<div onClick="navigateForward('1','0')" class="centerText">Create New Account</div>
+		<div class="spacer20px"></div>
+		<div onClick="navigateForward('2','0')" class="centerText">Sign In</div>
+	</div>
+
+	<div id="page-1" class="pageBody">
+		<div class="spacer10px"></div>
+		<div id="deptHeader" class="contentHeader">Sign In</div>
+		<div class="spacer20px"></div>
+		<div class="centerText">Select a user ID:</div>
+		<div class="spacer20px"></div>
+		<div class="centerText"><input type="text" class="textBox"></div>
+		<div class="spacer20px"></div>
+		<div class="centerText">Select a password:</div>
+		<div class="spacer20px"></div>
+		<div class="centerText"><input type="text" class="textBox"></div>
+		<div class="spacer20px"></div>
+		<div class="centerText">Re-enter your password:</div>
+		<div class="spacer20px"></div>
+		<div class="centerText"><input type="text" class="textBox"></div>
+		<div class="spacer20px"></div>
+		<div onClick="navigateForward('3','0')" class="centerText">Submit</div>
+		<div class="spacer20px"></div>
+	</div>
+
+	<div id="page-2" class="pageBody">
+		<div class="spacer10px"></div>
+		<div id="catHeader" class="contentHeader">Sign In</div>
+		<div class="spacer20px"></div>
+		<div onClick="navigateForward('3','0')" class="centerText">Enter User ID</div>
+		<div class="spacer20px"></div>
+		<div class="centerText"><input type="text" class="textBox"></div>
+		<div class="spacer20px"></div>
+		<div onClick="navigateForward('4','0')" class="centerText">Enter Password</div>
+		<div class="centerText"><input type="text" class="textBox"></div>
+		<div class="spacer20px"></div>
+		<div onClick="navigateForward('3','0')" class="centerText">Submit</div>
+	</div>
+	
+	<div id="page-3" class="pageBody">
+		<div class="spacer10px"></div>
+		<div id="newHeader" class="contentHeader">Create New Order</div>
+		<div class="spacer20px"></div>
+		<div onClick="navigateForward('4','0')" class="centerText">Create New Order</div>
+		<div class="spacer20px"></div>
+		<div onClick="navigateForward('6','0')" class="centerText">Select Existing Order</div>
+	</div>
+	
+	<div id="page-4" class="pageBody">
+		<div class="spacer10px"></div>
+		<div id="prodHeader" class="contentHeader">New Order</div>
+		<div class="spacer20px"></div>
+		<div class="centerText">Enter Customer Name</div>
+		<div class="spacer20px"></div>
+		<div class="centerText"><input type="text" class="textBox"></div>
+		<div class="spacer20px"></div>
+		<div class="centerText">Enter Coach Make</div>
+		<div class="spacer20px"></div>
+		<div class="centerText"><input type="text" class="textBox"></div>
+		<div class="spacer20px"></div>
+		<div class="centerText">Enter Coach Model</div>
+		<div class="spacer20px"></div>
+		<div class="centerText"><input type="text" class="textBox"></div>
+		<div class="spacer20px"></div>
+		<div class="centerText">Enter Coach Year</div>
+		<div class="spacer20px"></div>
+		<div class="centerText"><input type="text" class="textBox"></div>
+		<div class="spacer20px"></div>
+		<div class="centerText">Select Glass Type</div>
+		<div class="spacer20px"></div>
+			<div class="custom-select" style="width:200px;">
+				<select>
+					<option value="0">Select Glass Type:</option>
+					<option value="1">Rectangle</option>
+					<option value="1">Rectangle (OOS)</option>
+					<option value="1">Parallelogram</option>
+					<option value="1">Trapezoid</option>
+					<option value="1">Trapezoid (OOS)</option>			
+				</select>
+			</div>
+		<div class="centerText">Select Glass Shape</div>
+		<div class="spacer20px"></div>
+		<div class="centerText">Select Glass Color</div>
+		<div class="spacer20px"></div>
+		<div class="centerText">Select Glass Thickness</div>
+		<div class="spacer20px"></div>
+		<div class="centerText">Enter Height</div>
+		<div class="spacer20px"></div>
+		<div class="centerText">Enter Width</div>
+		<div class="spacer20px"></div>
+		<div class="centerText">Enter Corner Radius</div>
+		<div class="spacer20px"></div>
+		<div class="centerText">Enter Corner's Not Squared</div>
+		<div class="spacer20px"></div>
+		<div onClick="navigateForward('5','0')" class="centerText">Submit</div>
+		<div class="centerText">Add to Existing Order</div>
+	</div>
+	
+	<div id="page-5" class="pageBody">
+		<div class="spacer10px"></div>
+		<div class="contentHeader">Review Order</div>
+		<div class="spacer20px"></div>
+		<div onClick="navigateForward('6','0')" class="centerText">Submit</div>
+	</div>
+
+	<div id="page-6" class="pageBody">
+		<div class="spacer10px"></div>
+		<div class="contentHeader">Previous Orders</div>
+		<div class="spacer20px"></div>
+		<div class="centerText"></div>
+		<div class="spacer20px"></div>
+		<div onClick="navigateBackward('4','0')" class="centerText">Submit</div>
+	</div>
+
+	<div id="page-7" class="pageBody">
+		<div class="spacer10px"></div>
+		<div class="contentHeader">Submit Order</div>
+	</div>
+
+	<div id="page-8" class="pageBody">
+		<div class="spacer10px"></div>
+		<div class="contentHeader">Cart Page</div>
+	</div>
+
+
+
+<div id="footer">
+</div>
+
+	
+
+</body>
+</html>
